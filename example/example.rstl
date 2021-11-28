@@ -1,0 +1,21 @@
+Hello template
+@let param="Myparam";
+@let param2="Myparam2";
+@folder("myfolder");
+@file(&(String::new() + "myfolder\\" + &args[1]));
+line 2 with @[param]@ and "@[param2]@"
+  line without params and quotes
+	   @[param]@ line starts with param
+@manual_begin("section1");      
+	   line with \n inside
+	   line with \ and \\ and \\\ 
+	   next line
+@manual_end();      
+@@ // code starts here
+   // code continues
+@@ // code stops
+line after code   
+@close();
+@warning("Just be warned");
+Template done
+   
