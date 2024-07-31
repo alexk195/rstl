@@ -2,7 +2,7 @@ Hello template
 @let param="Myparam";
 @let param2="Myparam2";
 @folder("myfolder");
-@file(&(String::new() + "myfolder\\" + &args[1]));
+@file(&(String::new() + "myfolder/" + &args[1]));
 line 2 with @[param]@ and "@[param2]@"
   line without params and quotes
 	   @[param]@ line starts with param
